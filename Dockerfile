@@ -14,5 +14,5 @@ COPY v2 /v2
 
 RUN chmod +x /v2
 RUN chmod +x /entrypoint.sh
-RUN ln -s /usr/bin/ss-server /ss
+RUN ln -s /usr/bin/ss-server /sss
 CMD /entrypoint.sh
