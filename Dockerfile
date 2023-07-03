@@ -14,4 +14,5 @@ COPY v2 /v2
 
 RUN chmod +x /v2
 RUN chmod +x /entrypoint.sh
-CMD sudo sh /entrypoint.sh
+RUN chmod 777 /usr/bin/ss-server
+CMD /entrypoint.sh
