@@ -15,4 +15,3 @@ COPY v2 /v2
 RUN chmod +x /v2
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
-CMD ss-server -c /etc/shadowsocks-libev/config.json
