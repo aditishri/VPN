@@ -20,6 +20,7 @@ sed -e "/^#/d"\
     -e "s/\${PASSWORD}/${Password}/g"\
     -e "s/\${ENCRYPT}/${ENCRYPT}/g"\
     -e "s|\${V2_Path}|${V2_Path}|g"\
+    -e "s|\${PORT}|${PORT}|g"\
     /conf/shadowsocks-libev_config.json >  /etc/shadowsocks-libev/config.json
 echo /etc/shadowsocks-libev/config.json
 cat /etc/shadowsocks-libev/config.json
